@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GaanaTunes - Songs Playlist</title>
+    <link rel="stylesheet" href="/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Roboto:ital,wght@0,100..900;1,100..900&family=Sekuya&display=swap');
+</style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <i class="fas fa-music"></i>
+                <h1>GaanaTunes</h1>
+            </div>
+            <p>🎉Special Playlist - Play Songs Instantly! 🎉</p>
+        </header>
+
+        <!-- Search Section -->
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchInput" placeholder="Search Holi songs, artists...">
+                <button id="searchBtn"><i class="fas fa-search"></i></button>
+            </div>
+        </div>
+
+        <!-- Playlist Section -->
+        <div class="playlist-section">
+            <div class="playlist-header">
+                <h2 id="playlistTitle">Special Playlist 🔥</h2>
+                <div class="playlist-controls">
+                    <button id="shuffleBtn" class="control-btn">
+                        <i class="fas fa-random"></i> Shuffle
+                    </button>
+                    <button id="playAllBtn" class="control-btn">
+                        <i class="fas fa-play-circle"></i> Play All
+                    </button>
+                </div>
+            </div>
+            
+           <div id="playlist" class="playlist"></div>
+        </div>
+
+        <!-- Music Player Controls -->
+        <div class="music-player">
+            <div class="player-info">
+                <span id="currentSong">Select a  song to play 🎵</span>
+            </div>
+            <div class="player-controls">
+                <button id="prevSong" class="player-btn"><i class="fas fa-step-backward"></i></button>
+                <button id="playPauseBtn" class="player-btn"><i class="fas fa-play"></i></button>
+                <button id="nextSong" class="player-btn"><i class="fas fa-step-forward"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>
